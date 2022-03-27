@@ -1,0 +1,10 @@
+sort1 uses: bubble sort
+
+How do you know?: It took the longest time in reversed and random but it is the second fastest in sorted.
+
+sort2 uses: merge sort
+How do you know?: It took the shortest amount of time to solve almost of all text files.
+
+sort3 uses: selection sort
+
+How do you know?: It took less time in reversed and random compared to sort 1 but it was slower when the numbers are sorted. It is also still slower than sort2 overall.

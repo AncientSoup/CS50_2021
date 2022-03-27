@@ -1,0 +1,7 @@
+block =  #
+
+Ask user for height
+If height > 8 or < 1:
+  Return to line 4
+Else:
+  Print block by height
