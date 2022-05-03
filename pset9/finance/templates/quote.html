@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <form action="/quote" method="POST">
+        <div>
+            <input autofocus name="symbol" placeholder="Type any stock symbol" type="text">
+        </div>
+        <p></p>
+        <p></p>
+        <button class="btn btn-primary" type="submit">Quote</button>
+        <p></p>
+        <p></p>
+        <p></p>
+    </form>
+        
+    <h5>
+        <p>
+            Don't know what quotes are? Click <a href="https://www.investopedia.com/terms/s/stockquote.asp" target="_blank">here</a>.
+        </p>
+    </h5>
+    <p>
+        (It's not a rickroll. Promise.)
+    </p>
+{% endblock %}

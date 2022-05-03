@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Your account
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>
+                    Symbol
+                </th>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Shares
+                </th>
+                <th>
+                    Price
+                </th>
+                <th>
+                    <h5>TOTAL</h5>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in stock %}
+            <tr>
+                <td> {{ i["symbol"] }} </td>
+                <td> {{ i["name"] }} </td>
+                <td> {{ i["finals"] }} </td>
+                <td> {{ usd(i["price"]) }} </td>
+                <td> {{ usd(i["finals"] * i["price"]) }} </td>
+            </tr>
+            {% endfor %}
+            
+            <tr>
+                <td>CASH</td>
+                <!-- learned colspan through https://www.w3schools.com/tags/att_td_colspan.asp -->
+                <td colspan=3></td>
+                <td> {{ usd(cash) }} </td>
+                
+            </tr>
+        </tbody>
+        <tfoot>
+            <td colspan=4></td>
+            <td> {{ usd(final) }} </td>
+        </tfoot>
+    </table>
+{% endblock %}

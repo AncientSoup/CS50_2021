@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+    <p>
+        A share of {{ stock.name }} costs &#36;{{ stock.price }}
+    </p>
+    <p></p>
+    <p>
+        Don't know what this means? Click <a href="https://www.myaccountingcourse.com/accounting-dictionary/shares" target="_blank">here</a> to find out.
+    </p>
+{% endblock %}
